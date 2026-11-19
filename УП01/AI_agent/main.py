@@ -13,14 +13,14 @@ messages = [
     ChatMessage(role="system", content=SYSTEM_PROMPT)
 ]
 
-with open("chat_history.txt", "a", encoding="utf-8") as file:
+with open("УП01/AI_agent/chat_history.txt", "a", encoding="utf-8") as file:
     file.write("\n\n=== Новый запуск программы ===\n")
 
 with GigaChat(
     credentials=key,
     scope=scope,
     model="GigaChat-2",
-    ca_bundle_file="certs/russian_trusted_root_ca_pem.crt",
+    ca_bundle_file="УП01/AI_agent/certs/russian_trusted_root_ca_pem.crt",
     timeout=60,
 ) as client:
 
@@ -47,7 +47,7 @@ with GigaChat(
                 ChatMessage(role="system", content=SYSTEM_PROMPT)
             ]
             print("История диалога очищена.")
-            with open("chat_history.txt", "a", encoding="utf-8") as file:
+            with open("УП01/AI_agent/chat_history.txt", "a", encoding="utf-8") as file:
                 file.write("=== История диалога очищена ===\n")
             continue
 
@@ -71,7 +71,7 @@ with GigaChat(
         print("Помощник:")
         print(answer)
 
-        with open("chat_history.txt", "a", encoding="utf-8") as file:
+        with open("УП01/AI_agent/chat_history.txt", "a", encoding="utf-8") as file:
             file.write(f"\nТы: {user_text}\n")
             file.write(f"Помощник: {answer}\n")
 
