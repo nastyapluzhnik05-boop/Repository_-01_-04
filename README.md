@@ -39,6 +39,9 @@ py -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 
 ### Linux
+Перейти в папку окружения:
+cd УП01/AI_agent
+
 Создайте виртуальное окружение:
 python3 -m venv .venv
 
