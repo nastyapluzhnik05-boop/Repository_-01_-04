@@ -1,6 +1,6 @@
 # Развёртывание ИИ-агента
 Название агента: помощник в выборе подарка
-Ссылка на GitHub: https://github.com/nastyapluzhnik05-boop/Repository_-01_-04.git
+Ссылка на GitHub: https://github.com/nastyapluzhnik05-boop/my-ai-agent.git
 Способ переноса: напрямую из гитхаба в ubuntu с помощью команды git clone
 Путь в Ubuntu: /home/pluzhnik/projects/Repository_-01_-04/УП01/AI_agent
 Команда запуска: python main.py

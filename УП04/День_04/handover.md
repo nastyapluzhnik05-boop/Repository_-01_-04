@@ -2,7 +2,7 @@
 
 Проверяющий: самопроверка
 
-Ссылка на репозиторий: https://github.com/nastyapluzhnik05-boop/Repository_-01_-04.git
+Ссылка на репозиторий: https://github.com/nastyapluzhnik05-boop/my-ai-agent.git
 
 Удалось найти точку входа: да - main.py
 
