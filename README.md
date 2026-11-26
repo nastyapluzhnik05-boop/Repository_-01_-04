@@ -93,6 +93,26 @@ sudo docker run -it --name my-ai-run --env-file .env my-ai-agent:1.0
 ### Для повторного запуска:
 sudo docker start -ai my-ai-run
 
+## Запуск через Docker Compose
+Для запуска агента через Docker Compose:
+
+1. Перейти в папку проекта
+2. Убедиться, что файл .env заполнен
+3. Собрать образ:
+sudo docker compose build
+
+4. Запустить агента:
+sudo docker compose run --rm agent (одноразовый запуск, удаляется при завершении сеанса)
+либо sudo docker compose run --name [придумайте название вашего докер-образа] agent
+
+Чтобы запустить заново образ:
+sudo docker start -ai [название вашего докер-образа]
+
+5. Для завершения работы:
+sudo docker compose down
+
+Для работы необходимы Docker, Docker Compose и файл .env с настройками GigaChat
+
 ## Примеры запросов
 - Помоги выбрать подарок для подруги, она любит мультфильм "Смешарики"
 - Нужен подарок для мамы, она любит цветы
